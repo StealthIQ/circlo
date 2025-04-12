@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Confirm Your Circlo Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Reset & base */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        background-color: #fbfaf5;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      /* Container */
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Header */
+      .email-header {
+        background-color: #083b4c;
+        padding: 20px;
+        text-align: center;
+      }
+      .email-header svg {
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Body */
+      .email-body {
+        padding: 30px 20px;
+        color: #1c1c1c;
+        line-height: 1.5;
+      }
+      .email-body h2 {
+        color: #083b4c;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .email-body p {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      /* Button */
+      .btn-confirm {
+        display: inline-block;
+        padding: 14px 28px;
+        background-color: #45a049;
+        color: #ffffff !important;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .btn-confirm:hover {
+        background-color: #3d8e42;
+      }
+
+      /* Footer */
+      .email-footer {
+        background-color: #f0dcb4;
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #1c1c1c;
+      }
+      .email-footer a {
+        color: #083b4c;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <div class="email-container">
+            <!-- Header with inline SVG logo -->
+            <!-- Header with external SVG logo -->
+            <div class="email-header">
+              <img
+                src="https://res.cloudinary.com/dy4pnj3q5/image/upload/v1744379587/logo_light_zwvzvf.svg"
+                alt="Circlo logo"
+                width="120"
+                style="max-width: 120px; width: 100%; height: auto"
+              />
+            </div>
+
+            <!-- Body -->
+            <div class="email-body">
+              <h2>Welcome to Circlo!</h2>
+              <p>Hi there,</p>
+              <p>
+                Thanks for joining our community of eco‑champions. To get
+                started, please confirm your email address by clicking the
+                button below.
+              </p>
+              <p style="text-align: center">
+                <a href="{{ .ConfirmationURL }}" class="btn-confirm"
+                  >Confirm Your Email</a
+                >
+              </p>
+              <p>
+                If the button above doesn’t work, copy and paste this link into
+                your browser:
+              </p>
+              <p style="word-break: break-all">
+                <a href="{{ .ConfirmationURL }}" style="color: #45a049"
+                  >{{ .ConfirmationURL }}</a
+                >
+              </p>
+              <p>
+                Once confirmed, you’ll be ready to scan, earn points, and make a
+                real impact!
+              </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="email-footer">
+              <p>
+                Need help?
+                <a href="mailto:support@circlo.app">Contact our support team</a>
+              </p>
+              <p>&copy; 2025 Circlo. All rights reserved.</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
