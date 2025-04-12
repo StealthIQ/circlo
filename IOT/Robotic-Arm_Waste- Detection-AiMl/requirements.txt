@@ -3,5 +3,5 @@ opencv-python-headless==4.8.1.78
 torch
 torchvision
 ultralytics==8.0.173
-urllib3==1.26.6
+urllib3==1.26.19
 onnx
